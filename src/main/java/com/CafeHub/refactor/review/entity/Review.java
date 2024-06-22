@@ -19,17 +19,12 @@ public class Review {
     @Column(name = "review_id")
     private Long id;
 
+    @Embedded
+    private ReviewMainInfo mainInfo;
 
-    @Lob
-    private String content;
+    @Embedded
+    private ReviewSubInfo subInfo;
 
-    private Integer rating;
-
-    private Integer likeCount;
-
-    private Integer commentCount;
-
-    private String writer;
 
     private String reviewPhotos;
 

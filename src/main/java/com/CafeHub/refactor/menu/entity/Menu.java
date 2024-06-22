@@ -24,10 +24,8 @@ public class Menu {
 
     private Boolean isBest;
 
-
     @ManyToOne
     @JoinColumn(name = "cafe_id")
     private Cafe cafe;
-
 
 }

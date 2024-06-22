@@ -16,26 +16,12 @@ public class Cafe {
     @Column (name = "cafe_id")
     private Long id;
 
-    private String name;
+    @Embedded
+    private CafeBasicInfo basicInfo;
 
-    private Theme theme;
+    @Embedded
+    private CafeImgInfo imgInfo;
 
-    private String address;
-
-    private String phone;
-
-    private String operationHours;
-
-    private String closeDays;
-
-    private String photoUrl;
-
-    private String photoKey;
-
-    private Double rating;
-
-    private Integer reviewCnt;
-
-
-
+    @Embedded
+    private CafeReviewInfo reviewInfo;
 }

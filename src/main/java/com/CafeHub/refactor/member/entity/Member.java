@@ -15,16 +15,10 @@ public class Member {
     @Column(name = "member_id")
     private Long id;
 
-    private String username;
+    @Embedded
+    private MemberBasicInfo basicInfo;
 
-    private String nickname;
-
-    private String email;
-
-    private Role role;
-
-    private String photo_url;
-
-    private String photo_key;
+    @Embedded
+    private MemberImgInfo imgInfo;
 
 }
