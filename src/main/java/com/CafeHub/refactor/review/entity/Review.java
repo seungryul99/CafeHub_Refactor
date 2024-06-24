@@ -2,6 +2,7 @@ package com.CafeHub.refactor.review.entity;
 
 
 import com.CafeHub.refactor.cafe.entity.Cafe;
+import com.CafeHub.refactor.common.BaseEntity;
 import com.CafeHub.refactor.member.entity.Member;
 import jakarta.persistence.*;
 import lombok.*;
@@ -11,7 +12,7 @@ import lombok.*;
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
-public class Review {
+public class Review extends BaseEntity {
 
 
     @Id

@@ -1,6 +1,7 @@
 package com.CafeHub.refactor.bookmark.entity;
 
 import com.CafeHub.refactor.cafe.entity.Cafe;
+import com.CafeHub.refactor.common.BaseEntity;
 import com.CafeHub.refactor.member.entity.Member;
 import jakarta.persistence.*;
 import lombok.*;
@@ -10,7 +11,7 @@ import lombok.*;
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
-public class Bookmark {
+public class Bookmark extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

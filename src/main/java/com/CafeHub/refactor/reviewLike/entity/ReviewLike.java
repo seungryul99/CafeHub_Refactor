@@ -1,5 +1,6 @@
 package com.CafeHub.refactor.reviewLike.entity;
 
+import com.CafeHub.refactor.common.BaseEntity;
 import com.CafeHub.refactor.member.entity.Member;
 import com.CafeHub.refactor.review.entity.Review;
 import jakarta.persistence.*;
@@ -10,7 +11,7 @@ import lombok.*;
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
-public class ReviewLike {
+public class ReviewLike extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
